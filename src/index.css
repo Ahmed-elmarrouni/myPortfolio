@@ -3,18 +3,19 @@
 html {
   font-family: "Roboto", sans-serif;
   letter-spacing: .1px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-/* *,
+
+*,
 *:before,
 *:after {
   box-sizing: inherit;
-} */
+}
 
 
 :root {
@@ -25,7 +26,7 @@ html {
   --subtitle: rgb(161 161 170);
   --bgheader: rgb(39 39 42);
   --blue: rgb(93 183 252);
-
+  --icon-hover: #d4d4d8
 }
 
 .light {
@@ -40,50 +41,70 @@ body {
 
 .container {
   border: 2px solid var(--border);
-  width: 80%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
+  padding: 0 3rem;
 }
 
-.divider{
-  border-bottom:  1px solid var(--border);
+.divider {
+  border-bottom: 1px solid var(--border);
   margin: 3rem 0;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: initial;
   transition: 0.2s;
 }
 
-a:hover{
+a:hover {
   cursor: pointer;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
 
-.border{
+.border {
   border: 2px solid red;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
-button{
+button {
   all: unset;
 }
-button:hover{
-cursor: pointer;
+
+button:hover {
+  cursor: pointer;
 }
-button:active{
-scale: 0.90;
+
+button:active {
+  scale: 0.90;
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+
 }

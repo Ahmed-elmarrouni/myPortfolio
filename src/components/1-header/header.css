@@ -63,16 +63,15 @@ header .icon-menu:hover {
 
 
 
-header .icon-close {
+header .icon-close-outline {
     font-size: 1.5rem;
     color: var(--subtitle);
     transition: 0.3s;
 }
 
-header .icon-close:hover {
-    font-size: 1.7rem;
+header .icon-close-outline:hover {
+    font-size: 1.6rem;
     color: red;
-    rotate: 180deg;
 }
 
 /* POP UP WINDOw */
