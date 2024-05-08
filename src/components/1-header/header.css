@@ -1,0 +1,149 @@
+header.flex {
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+
+header.flex nav {
+    background-color: var(--bgheader);
+    padding: .77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px #4141423a;
+
+}
+
+header button.menu {
+    display: none;
+}
+
+header ul.flex {
+    gap: 16px;
+
+}
+
+header ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: .88rem;
+    font-weight: 500;
+
+}
+
+header ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: .9rem;
+
+}
+
+header button {
+    font-size: 1.2rem;
+}
+
+/* ICONS */
+header button.mode,
+header .icon-menu {
+    background-color: var(--bgheader);
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 1px solid gold;
+    justify-content: center;
+    text-align: center;
+    transition: .4s;
+}
+
+
+header button.mode:hover,
+header .icon-menu:hover {
+    color: var(--title);
+    border: 1px solid goldenrod;
+}
+
+
+
+header .icon-close {
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+
+header .icon-close:hover {
+    font-size: 1.7rem;
+    color: red;
+    rotate: 180deg;
+}
+
+/* POP UP WINDOw */
+header .fixed {
+    position: fixed;
+    z-index: 11;
+    inset: 0;
+    background-color: rgba(40, 40, 48, .91);
+}
+
+/* ANIMATION */
+@keyframes mymove {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+/*  */
+
+header .fixed ul.modal {
+    animation: mymove 0.4s 1;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+
+}
+
+header .fixed ul.modal li {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: .77rem;
+    padding-top: .5rem;
+}
+
+header .fixed ul.modal li:first-child {
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: .2rem;
+
+}
+
+
+header .fixed ul.modal li:last-child {
+    border: none;
+}
+
+header .fixed ul.modal li a {
+    font-size: 1rem;
+}
+
+
+
+@media (max-width: 700px) {
+    header.flex nav {
+        display: none;
+    }
+
+    header button.menu {
+        display: block;
+    }
+
+}
