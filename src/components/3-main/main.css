@@ -1,0 +1,134 @@
+main.flex {
+    gap: 7rem;
+    align-items: start;
+}
+
+/* LEFT SECTION */
+
+main section.left-section.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main section.left-section button {
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: .7rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: .5;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+main section.left-section button:hover {
+    opacity: 1;
+
+
+}
+
+main section.left-section button.active {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: .6px;
+    padding: .8rem 0;
+    border: 1px solid var(--blue);
+}
+
+
+
+/* RIGHT SECTION */
+main section.right-section.flex {
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 45px;
+    row-gap: 2rem;
+}
+
+
+.card {
+    border: 1px solid rgba(93, 188, 252, .3);
+    transition: .3s;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(225, 255, 255, 0.05), rgba(225, 255, 255, 0.05));
+}
+
+.card:hover {
+    border: 1px solid var(--blue);
+    scale: 1.03;
+    cursor: pointer;
+    rotate: 1deg;
+
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+
+.card .box {
+    padding: 1rem .4rem;
+}
+
+.card .box .title {
+    color: var(--title);
+}
+
+.card .box .subtitle {
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+}
+
+.card .box .icons {
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.card .box .icons .more {
+    font-size: 0.9rem;
+    color: var(--blue);
+    margin-right: 12px;
+}
+
+
+.card .box .icons .more:hover {
+    color: var(--icon-hover);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card .box .icons .icon-github {
+    color: var(--subtitle);
+
+}
+
+.card .box .icons .icon-github:hover {
+    color: var(--icon-hover);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    main.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section.left-section.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main section.left-section button {
+        width: 8rem;
+        padding: 0.8rem 0;
+        font-size: .9rem;
+    }
+
+}
