@@ -41,8 +41,7 @@ function Header() {
                     <div className="fixed">
                         <ul className='modal'>
                             <li>
-                                <button className='icon-close-outline' onClick={() => { setShowModal(false) }}>
-                                </button>
+                                <button className='icon-close-outline' onClick={() => { setShowModal(false) }}></button>
                             </li>
 
                             <li>
