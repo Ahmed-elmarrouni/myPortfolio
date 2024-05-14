@@ -22,6 +22,7 @@ section.contact-me label {
 }
 
 section.contact-me #email,
+section.contact-me #fullName,
 section.contact-me #message {
     all: unset;
     background-color: rgba(63, 63, 70, 0.15);
@@ -35,8 +36,10 @@ section.contact-me #message {
 }
 
 section.contact-me #email:focus,
+section.contact-me #fullName:focus,
 section.contact-me #message:focus,
 section.contact-me #email:hover,
+section.contact-me #fullName:hover,
 section.contact-me #message:hover {
     border: 1px solid var(--blue);
 }
@@ -75,6 +78,7 @@ section.contact-me #message {
 
 /* LIGHT MODE ??????? */
 .light .contact-me #email,
+.light .contact-me #fullName,
 .light section.contact-me #message {
     background-color: rgba(255, 255, 255, .162);
     border: 1px solid rgba(128, 128, 128, .451);
@@ -84,7 +88,9 @@ section.contact-me #message {
 
 .light section.contact-me #email:focus,
 .light section.contact-me #message:focus,
+.light section.contact-me #fullName:focus,
 .light section.contact-me #email:hover,
+.light section.contact-me #fullName:hover,
 .light section.contact-me #message:hover {
     border: 1px solid rgb(78, 80, 80);
 }
@@ -108,6 +114,7 @@ section.contact-me #message {
     }
 
     section.contact-me #email,
+    section.contact-me #fullName,
     section.contact-me #message {
         width: 100%;
         margin: 0;
