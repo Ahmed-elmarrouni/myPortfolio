@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './main.css';
+import { motion } from 'framer-motion';
 // import { useNavigate } from 'react-router-dom';
 
 
@@ -55,7 +56,12 @@ function Main() {
 
             <section className='right-section flex'>
                 {filteredProjects && filteredProjects.map((project) => (
-                    <article key={project.id} className='card'>
+                    <motion.article
+                        layout
+                        initial={{ transform: "scale(0.4)" }}
+                        animate={{ transform: "scale(1)" }}
+                        transition={{ type: "spring", damping: 8, stiffness: 50 }}
+                        key={project.id} className='card'>
                         <img src={project.imgpath} width={266} height={200} alt="projectImg" />
 
                         <div className='box' style={{ width: "266px" }}>
@@ -67,7 +73,7 @@ function Main() {
                                 <a href="#" className='more' >Learn more</a>
                             </div>
                         </div>
-                    </article>
+                    </motion.article>
                 ))}
             </section>
         </main>

@@ -17,7 +17,6 @@ html {
   box-sizing: inherit;
 }
 
-
 :root {
   --primary: #000;
   --secondary: rgb(24 24 27);
@@ -30,8 +29,7 @@ html {
 }
 
   
-
-.light {
+/* .light {
   --primary: rgb(250, 250, 250);
   --secondary: rgb(255 255 255);
   --border: rgba(282, 282, 282, 0.518);
@@ -40,7 +38,33 @@ html {
   --bgheader: rgb(253 253 253);
   --blue: rgb(0 149 246);
   --icon-hover: #333
-}
+} 
+ */
+
+
+/* Dark Mode */
+/* :root {
+  --primary: #1E1E1E;
+  --secondary: #333333;
+  --border: rgba(63, 63, 70, 0.4);
+  --title: #FFFFFF;
+  --subtitle: #B0B0B0;
+  --bgheader: #212121;
+  --blue: #1E90FF;
+  --icon-hover: #D4D4D8;
+}*/
+
+.light {
+  --primary: #FFFFFF;
+  --secondary: #F2F2F2;
+  --border: rgba(200, 200, 200, 0.5);
+  --title: #212121;
+  --subtitle: #666666;
+  --bgheader: #FFFFFF;
+  --blue: #0077FF;
+  --icon-hover: #333333;
+} 
+
 
 
 body {
@@ -62,7 +86,7 @@ body {
   margin: 3rem 0;
 }
 
-.light .divider{
+.light .divider {
   border-bottom: 2px solid var(--primary);
 }
 
