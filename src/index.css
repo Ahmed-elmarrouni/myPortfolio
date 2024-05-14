@@ -134,6 +134,7 @@ html {
 
 .scroll2top {
   background-color: var(--blue);
+  font-size: 1.4rem;
   height: 2.6rem;
   width: 2.6rem;
   border-radius: 50%;

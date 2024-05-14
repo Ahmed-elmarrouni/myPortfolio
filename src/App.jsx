@@ -3,16 +3,34 @@ import Header from './components/1-header/Header'
 import Main from './components/3-main/Main'
 import Contact from './components/4-contact/Contact'
 import Footer from './components/5-footer/Footer'
+import { useEffect, useState } from 'react'
 
 function App() {
 
+  const [scrollVisible, setScrollVisible] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) {
+      setScrollVisible(true);
+    } else {
+      setScrollVisible(false);
+    }
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: 'smooth'
     });
   };
+
+
+
 
   return (
 
@@ -29,7 +47,9 @@ function App() {
         <div className='divider' />
         <Footer />
 
-        <button className='scroll2top icon-cheveron-up' onClick={scrollToTop}></button>
+        {scrollVisible && (
+          <button className='scroll2top icon-cheveron-up' onClick={scrollToTop}></button>
+        )}
 
       </div>
 

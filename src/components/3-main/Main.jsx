@@ -1,11 +1,16 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './main.css';
+// import { useNavigate } from 'react-router-dom';
+
 
 function Main() {
     const [currentActive, setCurrentActive] = useState("All");
     const [filteredProjects, setFilteredProjects] = useState([]);
     const [projects, setProjects] = useState([]);
+
+
+    // const navigate = useNavigate()
 
     useEffect(() => {
         getData();
@@ -55,11 +60,11 @@ function Main() {
 
                         <div className='box' style={{ width: "266px" }}>
                             <h1 className='title'>{project.projectTitle}</h1>
-                            <p className='subtitle'>As a full stack developer, Im passionate about crafting seamless digital experiences. Specializing in web development, I bring a blend of front-end and back-end expertise to every project.</p>
+                            <p className='subtitle'>{project.description}</p>
 
                             <div className='flex icons'>
                                 <div className='icon-github'></div>
-                                <a href="#" className='more'>Learn more</a>
+                                <a href="#" className='more' >Learn more</a>
                             </div>
                         </div>
                     </article>
