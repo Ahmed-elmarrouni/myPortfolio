@@ -6,7 +6,18 @@ import Footer from './components/5-footer/Footer'
 
 function App() {
 
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
+
+
+
     <>
       <div className="container">
         <Header />
@@ -17,6 +28,9 @@ function App() {
         <Contact />
         <div className='divider' />
         <Footer />
+
+        <button className='scroll2top icon-cheveron-up' onClick={scrollToTop}></button>
+
       </div>
 
     </>

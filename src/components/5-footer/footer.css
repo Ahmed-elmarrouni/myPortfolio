@@ -26,6 +26,9 @@ footer.flex p {
 }
 
 
+
+
+
 @media (max-width: 700px) {
     footer.flex {
         flex-direction: column;

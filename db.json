@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "projectTitle": "react-project",
+            "category": "React",
+            "imgpath": "./noImage.png",
+            "description": "A project built using React.js for frontend development."
+        },
+        {
+            "id": "2",
+            "projectTitle": "Html/Css-project",
+            "category": "htmlcss",
+            "imgpath": "./noImage.png",
+            "description": "A project involving HTML and CSS for web development."
+        },
+        {
+            "id": "3",
+            "projectTitle": "python-project",
+            "category": "python",
+            "imgpath": "./noImage.png",
+            "description": "A project utilizing Python for scripting or application development."
+        },
+        {
+            "id": "4",
+            "projectTitle": "javascript-project",
+            "category": "javascript",
+            "imgpath": "./noImage.png",
+            "description": "A project involving JavaScript for web development or scripting."
+        },
+        {
+            "id": "5",
+            "projectTitle": "laravel-project",
+            "category": "laravel",
+            "imgpath": "./noImage.png",
+            "description": "A project built using the Laravel PHP framework."
+        }
+    ]
+}

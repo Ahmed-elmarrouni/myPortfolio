@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'github';
-  src:  url('fonts/github.eot?qffg8v');
-  src:  url('fonts/github.eot?qffg8v#iefix') format('embedded-opentype'),
-    url('fonts/github.ttf?qffg8v') format('truetype'),
-    url('fonts/github.woff?qffg8v') format('woff'),
-    url('fonts/github.svg?qffg8v#github') format('svg');
+  src:  url('fonts/github.eot?sg24dl');
+  src:  url('fonts/github.eot?sg24dl#iefix') format('embedded-opentype'),
+    url('fonts/github.ttf?sg24dl') format('truetype'),
+    url('fonts/github.woff?sg24dl') format('woff'),
+    url('fonts/github.svg?sg24dl#github') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,6 +30,12 @@
 }
 .icon-moon-o:before {
   content: "\e900";
+}
+.icon-cheveron-outline-up:before {
+  content: "\e906";
+}
+.icon-cheveron-up:before {
+  content: "\e907";
 }
 .icon-close-outline:before {
   content: "\e901";

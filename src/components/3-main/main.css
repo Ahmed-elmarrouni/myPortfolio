@@ -45,6 +45,7 @@ main section.right-section.flex {
     flex-wrap: wrap;
     column-gap: 45px;
     row-gap: 2rem;
+    flex-grow: 1;
 }
 
 
@@ -74,6 +75,7 @@ main section.right-section.flex {
 
 .card .box .title {
     color: var(--title);
+    text-transform: capitalize;
 }
 
 .card .box .subtitle {
