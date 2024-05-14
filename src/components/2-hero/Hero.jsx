@@ -10,7 +10,7 @@ function Hero() {
         <div className='left-secton' >
           <div className='parent-avatar flex'>
             <img src='./noImage.png' alt='my profile picture' className='avatar'></img>
-            <div className='myname'>Ahmed El marrouni</div>
+            <div className='myname' id='primaryName'>Ahmed El marrouni</div>
             <div className='myname icon-verified'></div>
             {/* <div className='icon-verified'></div> */}
 

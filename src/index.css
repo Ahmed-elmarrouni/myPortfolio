@@ -29,20 +29,17 @@ html {
   --icon-hover: #d4d4d8
 }
 
-/* :root {
-  --primary: #1E3A8A;
-  --secondary: #F4F4F4;
-  --border: rgba(30, 58, 138, 0.4);
-  --title: #1E3A8A;
-  --subtitle: #6C757D;
-  --bgheader: #F4F4F4;
-  --blue: #0099FF;
-  --icon-hover: #7E7E7E;
-} */
-
+  
 
 .light {
-  --primary: #fff;
+  --primary: rgb(250, 250, 250);
+  --secondary: rgb(255 255 255);
+  --border: rgba(282, 282, 282, 0.518);
+  --title: rgb(39 39 42);
+  --subtitle: rgb(82 82 82);
+  --bgheader: rgb(253 253 253);
+  --blue: rgb(0 149 246);
+  --icon-hover: #333
 }
 
 

@@ -52,6 +52,7 @@ header .icon-menu {
     justify-content: center;
     text-align: center;
     transition: .4s;
+    box-shadow: 1px 1px 40px rgba(35, 35, 36, .165);
 }
 
 
@@ -72,6 +73,11 @@ header .icon-close-outline {
 header .icon-close-outline:hover {
     font-size: 1.6rem;
     color: red;
+}
+
+
+.icon-sun{
+    color: orangered;
 }
 
 /* POP UP WINDOw */

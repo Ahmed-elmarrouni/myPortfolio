@@ -37,6 +37,17 @@ main section.left-section button.active {
     border: 1px solid var(--blue);
 }
 
+/* IF LIGHT MODE ????? */
+
+.light main section.left-section button.active {
+    border: 1px solid #000;
+}
+
+.light .card, .light .card:hover {
+    border: none;
+
+}
+
 
 
 /* RIGHT SECTION */
@@ -54,11 +65,13 @@ main section.right-section.flex {
     transition: .3s;
     border-radius: 5px;
     background-image: linear-gradient(rgba(225, 255, 255, 0.05), rgba(225, 255, 255, 0.05));
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .17), 1px 1px 1px rgba(0, 0, 0, .16);
 }
 
 .card:hover {
     border: 1px solid var(--blue);
     scale: 1.03;
+    background-color: rgb(246, 246, 246);
     cursor: pointer;
     rotate: 1deg;
 

@@ -27,6 +27,11 @@ section.hero .left-secton {
     margin-bottom: .3rem;
 }
 
+.light  #primaryName{
+    color: var(--title);
+    
+}
+
 
 .icon-verified {
     color: var(--blue);

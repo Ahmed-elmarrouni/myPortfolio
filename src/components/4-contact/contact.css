@@ -35,14 +35,15 @@ section.contact-me #message {
 }
 
 section.contact-me #email:focus,
-section.contact-me #message:focus {
-    border: 1px solid var(--blue);
-}
-
+section.contact-me #message:focus,
 section.contact-me #email:hover,
 section.contact-me #message:hover {
     border: 1px solid var(--blue);
 }
+
+
+
+
 
 section.contact-me #message {
     min-height: 9rem;
@@ -72,6 +73,23 @@ section.contact-me #message {
 
 }
 
+/* LIGHT MODE ??????? */
+.light .contact-me #email,
+.light section.contact-me #message {
+    background-color: rgba(255, 255, 255, .162);
+    border: 1px solid rgba(128, 128, 128, .451);
+    box-shadow: 1px 1px 1px rgba(73, 73, 75, .105);
+    color: #232324;
+}
+
+.light section.contact-me #email:focus,
+.light section.contact-me #message:focus,
+.light section.contact-me #email:hover,
+.light section.contact-me #message:hover {
+    border: 1px solid rgb(78, 80, 80);
+}
+
+
 
 @media (max-width: 600px) {
     section.contact-me form {
@@ -97,6 +115,7 @@ section.contact-me #message {
         padding: 0.7rem 0;
         margin-top: 1rem;
     }
+
 
     .send {
         width: 30%;
