@@ -1,6 +1,8 @@
 import './contact.css';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Lottie from 'lottie-react';
+import contact from "../../../public/animation/contact.json";
 
 function Contact() {
   const [formStatus, setFormStatus] = useState('Send Message');
@@ -70,9 +72,13 @@ function Contact() {
               <span className='icon-send' style={{ marginLeft: "35px" }}></span>
             </button>
           </form>
+
+
           <div className='animation'>
-            animation
+            <Lottie  style={{height: 500}} animationData={contact} />
+
           </div>
+
         </div>
       </section>
     </>

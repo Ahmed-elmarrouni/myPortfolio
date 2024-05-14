@@ -62,6 +62,10 @@ body {
   margin: 3rem 0;
 }
 
+.light .divider{
+  border-bottom: 2px solid var(--primary);
+}
+
 li {
   list-style: none;
 }

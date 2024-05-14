@@ -27,9 +27,9 @@ section.hero .left-secton {
     margin-bottom: .3rem;
 }
 
-.light  #primaryName{
+.light #primaryName {
     color: var(--title);
-    
+
 }
 
 
@@ -56,7 +56,12 @@ section.hero p.subtitle {
 section.hero .allicons {
     font-size: 1.3rem;
     gap: 1.5rem;
+    /* color: var(--subtitle); */
+}
+
+section.hero .allicons .icon {
     color: var(--subtitle);
+
 }
 
 section.hero .allicons .icon:hover {
@@ -69,3 +74,12 @@ section.hero .allicons .icon:hover {
 
 
 /* RIGHT SECTION */
+section.hero .animation {
+    width: 100%;
+}
+
+@media (max-width: 1250px) {
+    section.hero .animation {
+        display: none;
+    }
+}

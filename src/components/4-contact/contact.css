@@ -64,6 +64,7 @@ section.contact-me #message {
     border-radius: 5px;
     transition: .3s;
     margin-top: 1.8rem;
+    margin-left: 8rem;
 }
 
 .send:hover {
@@ -95,8 +96,19 @@ section.contact-me #message {
     border: 1px solid rgb(78, 80, 80);
 }
 
+.animation {
+    margin-left: 12rem;
+}
 
 
+
+@media (max-width: 1250px) {
+    section.contact-us  .contact-animation{display: none;}
+
+  }
+  
+  
+  
 @media (max-width: 600px) {
     section.contact-me form {
         display: flex;
@@ -125,8 +137,10 @@ section.contact-me #message {
 
 
     .send {
-        width: 30%;
+        width: 40%;
         align-self: center;
+        margin-left: 3rem;
+
     }
 
 }
