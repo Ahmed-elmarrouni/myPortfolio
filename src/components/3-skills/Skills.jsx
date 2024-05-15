@@ -1,4 +1,100 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
+// import './skills.css';
+// import axios from 'axios';
+// import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
+
+// function Skills() {
+//     const [skills, setSkills] = useState([]);
+//     const [tools, setTools] = useState([]);
+
+//     useEffect(() => {
+//         getSkills();
+//         getTools();
+//     }, []);
+
+//     // GET TOOLS FROM DB.JSON
+//     const getSkills = async () => {
+//         try {
+//             const res = await axios.get('http://localhost:3000/skills');
+//             setSkills(res.data);
+//         } catch (error) {
+//             console.error("Error fetching skills data:", error);
+//         }
+//     };
+
+//     // GET TOOLS FROM DB.JSON
+//     const getTools = async () => {
+//         try {
+//             const res = await axios.get('http://localhost:3000/tools');
+//             setTools(res.data);
+//         } catch (error) {
+//             console.error("Error fetching tools data:", error);
+//         }
+//     };
+
+
+
+//     // Define different animation variants
+//     const variants = {
+//         visible: { opacity: 1, y: 0 },
+//         hidden: { opacity: 0, y: 50 },
+//     };
+
+//     // FOR MOTION SKILLS CARDS
+//     const { ref, inView } = useInView({
+//         triggerOnce: true,
+//         threshold: 0.5,
+//     });
+
+//     return (
+//         <>
+//             <h1 className="skills-title">⚒️ Languages-Frameworks-Tools ⚒️</h1>
+//             <div className="slider-container">
+//                 {skills.map((item, index) => (
+//                     <motion.div
+//                         ref={ref}
+//                         layout
+//                         initial="hidden"
+//                         animate={inView ? "visible" : "hidden"}
+//                         variants={variants}
+//                         transition={{ type: "spring", damping: 8, stiffness: 50, delay: index * 0.1 }} // Adjust delay as needed
+//                         key={item.id}
+//                         className="slide"
+//                     >
+//                         <img src={item.skillSvg} alt={item.skillName} className="skill-icon" />
+//                     </motion.div>
+//                 ))}
+
+//             </div>
+
+
+//             {/* TOOLS */}
+
+//             <div className="slider-container">
+//                 {tools.map((tool, index) => (
+//                     <motion.div
+//                         ref={ref}
+//                         layout
+//                         initial="hidden"
+//                         animate={inView ? "visible" : "hidden"}
+//                         variants={variants}
+//                         transition={{ type: "spring", damping: 8, stiffness: 50, delay: index * 0.1 }}
+//                         key={tool.id}
+//                         className="slide"
+//                     >
+//                         <img src={tool.skillSvg} alt={tool.skillName} className="skill-icon" />
+//                     </motion.div>
+//                 ))}
+//             </div>
+//         </>
+//     );
+// }
+
+// export default Skills;
+
+
+import { useEffect, useState, useRef } from 'react';
 import './skills.css';
 import axios from 'axios';
 import { motion } from "framer-motion";
@@ -6,17 +102,32 @@ import { useInView } from "react-intersection-observer";
 
 function Skills() {
     const [skills, setSkills] = useState([]);
+    const [tools, setTools] = useState([]);
+    const skillsRef = useRef();
+    const toolsRef = useRef();
 
     useEffect(() => {
-        getData();
+        getSkills();
+        getTools();
     }, []);
 
-    const getData = async () => {
+    // GET SKILLS FROM DB.JSON
+    const getSkills = async () => {
         try {
             const res = await axios.get('http://localhost:3000/skills');
             setSkills(res.data);
         } catch (error) {
             console.error("Error fetching skills data:", error);
+        }
+    };
+
+    // GET TOOLS FROM DB.JSON
+    const getTools = async () => {
+        try {
+            const res = await axios.get('http://localhost:3000/tools');
+            setTools(res.data);
+        } catch (error) {
+            console.error("Error fetching tools data:", error);
         }
     };
 
@@ -26,8 +137,13 @@ function Skills() {
         hidden: { opacity: 0, y: 50 },
     };
 
-    // FOR MOTION SKILLS CARDS
-    const { ref, inView } = useInView({
+    // FOR MOTION SKILLS AND TOOLS CARDS
+    const { ref: skillsInViewRef, inView: skillsInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+    });
+
+    const { ref: toolsInViewRef, inView: toolsInView } = useInView({
         triggerOnce: true,
         threshold: 0.5,
     });
@@ -35,19 +151,39 @@ function Skills() {
     return (
         <>
             <h1 className="skills-title">⚒️ Languages-Frameworks-Tools ⚒️</h1>
-            <div className="slider-container">
+
+            {/* SKILLS */}
+            <div className="slider-container" ref={skillsRef}>
                 {skills.map((item, index) => (
                     <motion.div
-                        ref={ref}
+                        ref={skillsInViewRef}
                         layout
                         initial="hidden"
-                        animate={inView ? "visible" : "hidden"}
+                        animate={skillsInView ? "visible" : "hidden"}
                         variants={variants}
-                        transition={{ type: "spring", damping: 8, stiffness: 50, delay: index * 0.1 }} // Adjust delay as needed
+                        transition={{ type: "spring", damping: 8, stiffness: 50, delay: index * 0.1 }}
                         key={item.id}
                         className="slide"
                     >
                         <img src={item.skillSvg} alt={item.skillName} className="skill-icon" />
+                    </motion.div>
+                ))}
+            </div>
+
+            {/* TOOLS */}
+            <div className="slider-container" ref={toolsRef}>
+                {tools.map((tool, index) => (
+                    <motion.div
+                        ref={toolsInViewRef}
+                        layout
+                        initial="hidden"
+                        animate={toolsInView ? "visible" : "hidden"}
+                        variants={variants}
+                        transition={{ type: "spring", damping: 8, stiffness: 50, delay: index * 0.1 }}
+                        key={tool.id}
+                        className="slide"
+                    >
+                        <img src={tool.skillSvg} alt={tool.skillName} className="skill-icon" />
                     </motion.div>
                 ))}
             </div>

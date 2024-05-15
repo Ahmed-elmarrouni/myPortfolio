@@ -137,5 +137,43 @@
             "skillName": "Qt",
             "skillSvg": "/public/svg/skills/qt-svgrepo-com.svg"
         }
+    ],
+    "tools": [
+        {
+            "id": "1",
+            "skillName": "github",
+            "skillSvg": "/public/svg/tools/icons8-github.svg"
+        },
+        {
+            "id": "2",
+            "skillName": "gitlab",
+            "skillSvg": "/public/svg/tools/icons8-gitlab.svg"
+        },
+        {
+            "id": "3",
+            "skillName": "postman",
+            "skillSvg": "/public/svg/tools/icons8-postman-api.svg"
+        },
+        {
+            "id": "4",
+            "skillName": "github",
+            "skillSvg": "/public/svg/tools/icons8-pycharm.svg"
+        },
+        {
+            "id": "5",
+            "skillName": "VsCode",
+            "skillSvg": "/public/svg/tools/icons8-vs-code.svg"
+        },
+        {
+            "id": "6",
+            "skillName": "mysql",
+            "skillSvg": "/public/svg/tools/icons8-mysql-96.png"
+        }
+        ,
+        {
+            "id": "8",
+            "skillName": "Database",
+            "skillSvg": "/public/svg/tools/icons8-database-100.png"
+        }
     ]
 }
