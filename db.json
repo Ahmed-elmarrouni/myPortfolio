@@ -38,14 +38,9 @@
     ],
     "skills": [
         {
-            "id": "5",
-            "skillName": "aws",
-            "skillSvg": "/public/svg/skills/aws.svg"
-        },
-        {
-            "id": "8",
-            "skillName": "bootstrap",
-            "skillSvg": "/public/svg/skills/bootstrap.svg"
+            "id": "31",
+            "skillName": "html",
+            "skillSvg": "/public/svg/skills/html.svg"
         },
         {
             "id": "16",
@@ -53,14 +48,14 @@
             "skillSvg": "/public/svg/skills/css.svg"
         },
         {
-            "id": "27",
-            "skillName": "git",
-            "skillSvg": "/public/svg/skills/git.svg"
+            "id": "8",
+            "skillName": "bootstrap",
+            "skillSvg": "/public/svg/skills/bootstrap.svg"
         },
         {
-            "id": "31",
-            "skillName": "html",
-            "skillSvg": "/public/svg/skills/html.svg"
+            "id": "66",
+            "skillName": "tailwind",
+            "skillSvg": "/public/svg/skills/tailwind.svg"
         },
         {
             "id": "35",
@@ -71,6 +66,31 @@
             "id": "40",
             "skillName": "materialui",
             "skillSvg": "/public/svg/skills/materialui.svg"
+        },
+        {
+            "id": "58",
+            "skillName": "react",
+            "skillSvg": "/public/svg/skills/react.svg"
+        },
+        {
+            "id": "70",
+            "skillName": "vitejs",
+            "skillSvg": "/public/svg/skills/vitejs.svg"
+        },
+        {
+            "id": "71",
+            "skillName": "vue",
+            "skillSvg": "/public/svg/skills/vue.svg"
+        },
+        {
+            "id": "27",
+            "skillName": "git",
+            "skillSvg": "/public/svg/skills/git.svg"
+        },
+        {
+            "id": "5",
+            "skillName": "aws",
+            "skillSvg": "/public/svg/skills/aws.svg"
         },
         {
             "id": "43",
@@ -108,24 +128,14 @@
             "skillSvg": "/public/svg/skills/python.svg"
         },
         {
+            "id": "57",
+            "skillName": "laravel",
+            "skillSvg": "/public/svg/skills/laravel-svgrepo-com.svg"
+        },
+        {
             "id": "58",
-            "skillName": "react",
-            "skillSvg": "/public/svg/skills/react.svg"
-        },
-        {
-            "id": "66",
-            "skillName": "tailwind",
-            "skillSvg": "/public/svg/skills/tailwind.svg"
-        },
-        {
-            "id": "70",
-            "skillName": "vitejs",
-            "skillSvg": "/public/svg/skills/vitejs.svg"
-        },
-        {
-            "id": "71",
-            "skillName": "vue",
-            "skillSvg": "/public/svg/skills/vue.svg"
+            "skillName": "Qt",
+            "skillSvg": "/public/svg/skills/qt-svgrepo-com.svg"
         }
     ]
 }
