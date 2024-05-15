@@ -4,6 +4,7 @@ import Main from './components/3-main/Main'
 import Contact from './components/4-contact/Contact'
 import Footer from './components/5-footer/Footer'
 import { useEffect, useState } from 'react'
+import Skills from './components/skills/Skills'; 
 
 function App() {
 
@@ -46,6 +47,9 @@ function App() {
         <Contact />
         <div className='divider' />
         <Footer />
+        <div className='divider' />
+
+        <Skills />
 
         {scrollVisible && (
           <button className='scroll2top icon-cheveron-up' onClick={scrollToTop}></button>

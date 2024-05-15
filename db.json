@@ -35,5 +35,97 @@
             "imgpath": "./noImage.png",
             "description": "A project built using the Laravel PHP framework."
         }
+    ],
+    "skills": [
+        {
+            "id": "5",
+            "skillName": "aws",
+            "skillSvg": "/public/svg/skills/aws.svg"
+        },
+        {
+            "id": "8",
+            "skillName": "bootstrap",
+            "skillSvg": "/public/svg/skills/bootstrap.svg"
+        },
+        {
+            "id": "16",
+            "skillName": "css",
+            "skillSvg": "/public/svg/skills/css.svg"
+        },
+        {
+            "id": "27",
+            "skillName": "git",
+            "skillSvg": "/public/svg/skills/git.svg"
+        },
+        {
+            "id": "31",
+            "skillName": "html",
+            "skillSvg": "/public/svg/skills/html.svg"
+        },
+        {
+            "id": "35",
+            "skillName": "javascript",
+            "skillSvg": "/public/svg/skills/javascript.svg"
+        },
+        {
+            "id": "40",
+            "skillName": "materialui",
+            "skillSvg": "/public/svg/skills/materialui.svg"
+        },
+        {
+            "id": "43",
+            "skillName": "microsoftoffice",
+            "skillSvg": "/public/svg/skills/microsoftoffice.svg"
+        },
+        {
+            "id": "44",
+            "skillName": "mongoDB",
+            "skillSvg": "/public/svg/skills/mongoDB.svg"
+        },
+        {
+            "id": "45",
+            "skillName": "mysql",
+            "skillSvg": "/public/svg/skills/mysql.svg"
+        },
+        {
+            "id": "46",
+            "skillName": "nextJS",
+            "skillSvg": "/public/svg/skills/nextJS.svg"
+        },
+        {
+            "id": "52",
+            "skillName": "php",
+            "skillSvg": "/public/svg/skills/php.svg"
+        },
+        {
+            "id": "54",
+            "skillName": "postgresql",
+            "skillSvg": "/public/svg/skills/postgresql.svg"
+        },
+        {
+            "id": "56",
+            "skillName": "python",
+            "skillSvg": "/public/svg/skills/python.svg"
+        },
+        {
+            "id": "58",
+            "skillName": "react",
+            "skillSvg": "/public/svg/skills/react.svg"
+        },
+        {
+            "id": "66",
+            "skillName": "tailwind",
+            "skillSvg": "/public/svg/skills/tailwind.svg"
+        },
+        {
+            "id": "70",
+            "skillName": "vitejs",
+            "skillSvg": "/public/svg/skills/vitejs.svg"
+        },
+        {
+            "id": "71",
+            "skillName": "vue",
+            "skillSvg": "/public/svg/skills/vue.svg"
+        }
     ]
 }

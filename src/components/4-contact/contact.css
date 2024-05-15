@@ -77,6 +77,12 @@ section.contact-me #message {
 
 }
 
+.light .send {
+    border: 1px solid #000;
+    background-color: var(--subtitle);
+}
+
+
 /* LIGHT MODE ??????? */
 .light .contact-me #email,
 .light .contact-me #fullName,
@@ -103,12 +109,14 @@ section.contact-me #message {
 
 
 @media (max-width: 1250px) {
-    section.contact-us  .contact-animation{display: none;}
+    section.contact-us .contact-animation {
+        display: none;
+    }
 
-  }
-  
-  
-  
+}
+
+
+
 @media (max-width: 600px) {
     section.contact-me form {
         display: flex;

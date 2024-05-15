@@ -19,8 +19,6 @@ function Hero() {
               src='./noImage.png' alt='my profile picture' className='avatar'></motion.img>
             <div className='myname' id='primaryName'>Ahmed El marrouni</div>
             <div className='myname icon-verified'></div>
-            {/* <div className='icon-verified'></div> */}
-
           </div>
 
           <motion.h1
@@ -42,20 +40,13 @@ function Hero() {
               <a href='mailto:ahmedelmarrouni1@gmail.com' target='_blank' className='icon icon-envelope'></a>
             </div>
 
-            {/* <div className='icon icon-linkedin'></div>
-            <div className='icon icon-github'></div>
-            <div className='icon icon-envelope'></div> */}
+
           </div>
         </div>
-
-        {/* <div className='right-secton animation'>
-          <Lottie  style={{height: 700}} animationData={laptopanimation} />
-        </div> */}
 
         <div className='right-section animation' >
           <Lottie animationData={laptopanimation} style={{ height: 400, width: 400 }} />
         </div>
-
       </section>
 
     </>
