@@ -1,3 +1,4 @@
+import Study from './components/study/Study';
 import Header from './components/1-header/Header'
 import Hero from './components/2-hero/Hero'
 import Skills from './components/3-skills/Skills';
@@ -49,8 +50,8 @@ function App() {
         <Contact />
         <div className='divider' />
         <Footer />
-        {/* <div className='divider' /> */}
-
+        <div className='divider' />
+        <Study />
 
         {scrollVisible && (
           <button className='scroll2top icon-cheveron-up' onClick={scrollToTop}></button>

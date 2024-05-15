@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './main.css';
 import { motion } from 'framer-motion';
-// import { useNavigate } from 'react-router-dom';
 
 
 function Main() {
@@ -10,8 +9,6 @@ function Main() {
     const [filteredProjects, setFilteredProjects] = useState([]);
     const [projects, setProjects] = useState([]);
 
-
-    // const navigate = useNavigate()
 
     useEffect(() => {
         getData();
@@ -81,3 +78,5 @@ function Main() {
 }
 
 export default Main;
+
+

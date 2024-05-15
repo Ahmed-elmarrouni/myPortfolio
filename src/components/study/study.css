@@ -1,0 +1,50 @@
+/*  */
+.title{
+    color: var(--title);
+}
+.subtitle{
+    color: var(--subtitle);
+}
+
+/*  */
+.vertical-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
+
+.vertical-line:before {
+    content: '';
+    width: 2px;
+    /* Adjust thickness of the line */
+    height: 80%;
+    /* Adjust height of the line */
+    background-color: black;
+    /* Adjust color of the line */
+    position: absolute;
+    top: 10%;
+    /* Adjust top position */
+    bottom: 10%;
+    /* Adjust bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left-section,
+.right-section {
+    width: 60%;
+    /* Adjust width of sections */
+    padding: 70px;
+    text-align: center;
+}
+
+.left-section {
+    align-self: flex-start;
+}
+
+.right-section {
+    align-self: flex-end;
+}
