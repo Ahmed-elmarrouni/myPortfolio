@@ -3,6 +3,7 @@ import './study.css';
 function Study() {
     return (
         <>
+            <h1 className='education'>Education</h1>
             <div className="vertical-line">
                 <div className="circle top"></div>
                 <div className="left">

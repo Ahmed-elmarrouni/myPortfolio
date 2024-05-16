@@ -1,10 +1,10 @@
-import Study from './components/study/Study';
+import Study from './components/3-study/Study';
 import Header from './components/1-header/Header'
 import Hero from './components/2-hero/Hero'
-import Skills from './components/3-skills/Skills';
+import Skills from './components/5-skills/Skills';
 import Main from './components/4-main/Main'
-import Contact from './components/5-contact/Contact'
-import Footer from './components/6-footer/Footer'
+import Contact from './components/6-contact/Contact'
+import Footer from './components/7-footer/Footer'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -43,6 +43,8 @@ function App() {
         <Header />
         <Hero />
         <div className='divider' />
+        <Study />
+        <div className='divider' />
         <Skills />
         <div className='divider' />
         <Main />
@@ -50,8 +52,6 @@ function App() {
         <Contact />
         <div className='divider' />
         <Footer />
-        <div className='divider' />
-        <Study />
 
         {scrollVisible && (
           <button className='scroll2top icon-cheveron-up' onClick={scrollToTop}></button>

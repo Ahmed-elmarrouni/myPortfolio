@@ -1,3 +1,16 @@
+.education {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: var(--title);
+}
+
+.light .education {
+    color: var(--title);
+}
+
+
+
 .title,
 .date {
     color: var(--title);
