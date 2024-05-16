@@ -2,16 +2,24 @@ import './study.css';
 
 function Study() {
     return (
-        <div className="vertical-line">
-            <div className="left-section">
-                <h1 className='title'>Left Section</h1>
-                <p className='subtitle'>This is the content of the left section.</p>
+        <>
+            <div className="vertical-line">
+                <div className="circle top"></div>
+                <div className="left">
+                    <h1 className='title'>Specialized Technician in Full-Stack Development</h1>
+                    <h3 className='subtitle'>ISTA Tetouan Park - Tetouan, Morocco</h3>
+                    <p className='date'>2022 - 2024</p>
+                </div>
+                <div className="circle middle"></div>
+                <div className="right">
+                    <h1 className='title'>High School Diploma in Mechanical Technology Science, STM</h1>
+                    <h3 className='subtitle'>Imam Al Ghazali Technical High School - Tetouan, Morocco</h3>
+                    <p className='date'>2022</p>
+                </div>
             </div>
-            <div className="right-section">
-                <h1 className='title'>Right Section</h1>
-                <p className='subtitle'>This is the content of the right section.</p>
-            </div>
-        </div>
+
+        </>
+
     );
 }
 

@@ -25,8 +25,6 @@ main section.left-section button {
 
 main section.left-section button:hover {
     opacity: 1;
-
-
 }
 
 main section.left-section button.active {

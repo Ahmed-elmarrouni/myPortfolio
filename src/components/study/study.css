@@ -1,17 +1,30 @@
-/*  */
-.title{
+.title,
+.date {
+    color: var(--title);
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: var(--subtitle);
+    margin-bottom: 20px;
+}
+
+
+.light .title,
+.light .date {
     color: var(--title);
 }
-.subtitle{
+
+.light .subtitle {
     color: var(--subtitle);
 }
 
-/*  */
+/* Container Styles */
 .vertical-line {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100vh;
     position: relative;
 }
@@ -19,32 +32,84 @@
 .vertical-line:before {
     content: '';
     width: 2px;
-    /* Adjust thickness of the line */
     height: 80%;
-    /* Adjust height of the line */
-    background-color: black;
-    /* Adjust color of the line */
+    background-color: var(--border);
     position: absolute;
     top: 10%;
-    /* Adjust top position */
-    bottom: 10%;
-    /* Adjust bottom position */
     left: 50%;
     transform: translateX(-50%);
 }
 
-.left-section,
-.right-section {
-    width: 60%;
-    /* Adjust width of sections */
-    padding: 70px;
-    text-align: center;
+/* Circle Styles */
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--blue);
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.left-section {
+.circle.top {
+    top: 22%;
+}
+
+.circle.middle {
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.light .circle {
+    background-color: var(--blue);
+
+}
+
+
+/* BOXES */
+/* Text Container Styles */
+.left,
+.right {
+    width: 40%;
+    padding: 20px;
+    letter-spacing: .8px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    background-color: var(--border);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.light .left,
+.light .right {
+    background-color: var(--primary);
+}
+
+
+.left {
     align-self: flex-start;
 }
 
-.right-section {
+.right {
     align-self: flex-end;
+}
+
+/* Hover Effect */
+.left:hover,
+.right:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px var(--icon-hover);
+}
+
+.left:hover::after,
+.right:hover::after {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.left:hover,
+.right:hover {
+    cursor: pointer;
 }
