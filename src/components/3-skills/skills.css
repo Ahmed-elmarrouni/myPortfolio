@@ -37,7 +37,7 @@
     background-color: var(--border);
 }
 
-.light .slide{
+.light .slide {
     background-color: var(--primary);
 }
 
@@ -54,6 +54,7 @@
 .slide:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px var(--icon-hover);
+    rotate: 1deg;
 }
 
 /* Media Queries for responsiveness */
@@ -94,4 +95,3 @@
         width: 70px;
     }
 }
-

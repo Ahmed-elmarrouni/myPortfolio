@@ -79,7 +79,7 @@
     border: 1px solid var(--blue);
     background-color: var(--border);
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .light .left,
@@ -101,6 +101,9 @@
 .right:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px var(--icon-hover);
+    rotate: 1deg;
+    transition: transform 0.3s ease;
+
 }
 
 .left:hover::after,
@@ -112,4 +115,76 @@
 .left:hover,
 .right:hover {
     cursor: pointer;
+}
+
+/* MEDIA SCREEN FOR DEFFRENT SCREEN SIZES */
+
+@media (max-width: 1200px) {
+    .vertical-line:before {
+        display: none;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .circle {
+        display: none;
+    }
 }
