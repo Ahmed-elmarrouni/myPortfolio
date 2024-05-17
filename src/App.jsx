@@ -40,7 +40,7 @@ function App() {
 
     <>
       <div className="container">
-        <Header />
+        <Header  />
         <Hero />
         <div className='divider' />
         <Study />
