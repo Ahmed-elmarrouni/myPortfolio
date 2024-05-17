@@ -1,3 +1,14 @@
+header {
+    position: sticky;
+    height: 80px;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--secondary);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
 header.flex {
     justify-content: space-between;
     padding: 0 2.4rem;
@@ -76,7 +87,7 @@ header .icon-close-outline:hover {
 }
 
 
-.icon-sun{
+.icon-sun {
     color: orangered;
 }
 

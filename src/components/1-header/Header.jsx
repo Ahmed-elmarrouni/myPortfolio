@@ -24,7 +24,7 @@ function Header() {
                 localStorage.setItem("currentMode", theme === "dark" ? "light" : "dark");
                 setTheme(localStorage.getItem("currentMode"));
 
-            }} className='flex'>
+            }} className='flex '>
 
 
                 <button onClick={() => { setShowModal(true) }} className='menu icon-menu flex'></button>
@@ -33,7 +33,7 @@ function Header() {
                 <nav>
                     <ul className='flex'>
                         <li>
-                            <a href="" >About</a>
+                            <a href="" >About</a> 
                         </li>
                         <li>
                             <a href="" >Articles</a>
