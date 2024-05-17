@@ -27,8 +27,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90px;
-    width: 90px;
+    height: 65px;
+    width: 65px;
     border: 1px solid var(--blue);
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -46,8 +46,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 60px;
-    max-height: 50px;
+    max-width: 50px;
+    max-height: 35px;
     margin-bottom: 10px;
 }
 

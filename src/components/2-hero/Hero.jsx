@@ -107,6 +107,7 @@ function Hero() {
           As a full stack developer, I&apos;m passionate about crafting seamless digital experiences. Specializing in web development, I bring a blend of front-end and back-end expertise to every project. With a collaborative mindset and a dedication to professional growth, I tackle challenges with resilience and determination, driving innovation in the evolving tech landscape.
         </p>
 
+
         <div className="allicons flex">
           <div>
             <a href='https://www.linkedin.com/in/ahmed-el-marrouni-0484a2272/' target='_blank' className='icon icon-linkedin'></a>
@@ -118,6 +119,26 @@ function Hero() {
             <a href='mailto:ahmedelmarrouni1@gmail.com' target='_blank' className='icon icon-envelope'></a>
           </div>
         </div>
+
+
+
+        <div className='CvBtn'>
+          <button className="animated-button">
+            <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span className="text">Download CV</span>
+            <span className="circleBtn"></span>
+            <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
       </div>
 
       <motion.div

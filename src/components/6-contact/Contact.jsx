@@ -51,7 +51,7 @@ function Contact() {
           <span className='icon-envelope'></span>
           Contact me
         </h1>
-        <p className='subtitle'>Contact me for more information</p>
+        <h3 className='subtitle'>Don&apos;t be shy! Hit me up! 👇</h3>
         <div className='flex'>
           <form onSubmit={sendEmail} className='' method='Post'>
             <div>
@@ -75,7 +75,7 @@ function Contact() {
 
 
           <div className='animation'>
-            <Lottie  style={{height: 500}} animationData={contact} />
+            <Lottie style={{ height: 500 }} animationData={contact} />
 
           </div>
 
