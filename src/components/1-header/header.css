@@ -154,6 +154,11 @@ header .fixed ul.modal li a {
 
 
 @media (max-width: 700px) {
+
+    header {
+        position: static;
+    }
+
     header.flex nav {
         display: none;
     }

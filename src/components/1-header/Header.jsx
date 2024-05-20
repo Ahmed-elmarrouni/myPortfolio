@@ -24,7 +24,7 @@ function Header() {
                 localStorage.setItem("currentMode", theme === "dark" ? "light" : "dark");
                 setTheme(localStorage.getItem("currentMode"));
 
-            }} className='flex '>
+            }} className='flex'>
 
 
                 <button onClick={() => { setShowModal(true) }} className='menu icon-menu flex'></button>
@@ -33,19 +33,19 @@ function Header() {
                 <nav>
                     <ul className='flex'>
                         <li>
-                            <a href="" >About</a> 
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="" >Articles</a>
+                            <a href="#education">Education</a>
                         </li>
                         <li>
-                            <a href="" >Projects</a>
+                            <a href="#skills">Skills</a>
                         </li>
                         <li>
-                            <a href="" >Speaking</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="" >Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,19 +63,19 @@ function Header() {
                             </li>
 
                             <li>
-                                <a href="" >About</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="" >Articles</a>
+                                <a href="#education">Education</a>
                             </li>
                             <li>
-                                <a href="" >Projects</a>
+                                <a href="#skills">Skills</a>
                             </li>
                             <li>
-                                <a href="" >Speaking</a>
+                                <a href="#projects">Projects</a>
                             </li>
                             <li>
-                                <a href="" >Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>

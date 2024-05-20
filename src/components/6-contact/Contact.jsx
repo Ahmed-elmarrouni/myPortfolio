@@ -46,7 +46,7 @@ function Contact() {
 
   return (
     <>
-      <section className='contact-me'>
+      <section className='contact-me' id="contact">
         <h1 className='title'>
           <span className='icon-envelope'></span>
           Contact me

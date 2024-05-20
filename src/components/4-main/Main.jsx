@@ -41,7 +41,7 @@ function Main() {
 
 
     return (
-        <main className='flex'>
+        <main className='flex' id="projects">
             <section className='flex left-section'>
                 <button onClick={() => handleCategoryChange("All")} className={currentActive === "All" ? 'active' : null}>All projects</button>
                 <button onClick={() => handleCategoryChange("htmlcss")} className={currentActive === "htmlcss" ? 'active' : null}>HTML & CSS</button>
