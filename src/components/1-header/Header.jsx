@@ -18,13 +18,21 @@ function Header() {
 
     }, [theme]);
 
+
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
+
+    const toggleTheme = () => {
+        const newTheme = theme === "dark" ? "light" : "dark";
+        localStorage.setItem("currentMode", newTheme);
+        setTheme(newTheme);
+    };
+
+
     return (
         <>
-            <header onClick={() => {
-                localStorage.setItem("currentMode", theme === "dark" ? "light" : "dark");
-                setTheme(localStorage.getItem("currentMode"));
-
-            }} className='flex'>
+            <header className='flex'>
 
 
                 <button onClick={() => { setShowModal(true) }} className='menu icon-menu flex'></button>
@@ -51,9 +59,15 @@ function Header() {
                 </nav>
 
 
-                <button className='mode flex'>
-                    {theme === "dark" ? (<span className='icon-moon-o'></span>) : (<span className='icon-sun'></span>)}
+
+                <button onClick={toggleTheme} className="mode flex">
+                    {theme === "dark" ? (
+                        <span className="icon-moon-o"></span>
+                    ) : (
+                        <span className="icon-sun"></span>
+                    )}
                 </button>
+
 
                 {showModal && (
                     <div className="fixed">
@@ -81,7 +95,7 @@ function Header() {
                     </div>
 
                 )}
-            </header>
+            </header >
         </>
     )
 }
