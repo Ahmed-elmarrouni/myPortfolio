@@ -10,30 +10,21 @@ function Skills() {
     const skillsRef = useRef();
     const toolsRef = useRef();
 
+
+    // GET SKILLS FROM MONGODB
     useEffect(() => {
-        getSkills();
-        getTools();
+        axios.get("http://localhost:3000/getSkills")
+            .then(skills => setSkills(skills.data))
+            .catch(err => console.log(err))
     }, []);
 
-    // GET SKILLS FROM DB.JSON
-    const getSkills = async () => {
-        try {
-            const res = await axios.get('http://localhost:3000/skills');
-            setSkills(res.data);
-        } catch (error) {
-            console.error("Error fetching skills data:", error);
-        }
-    };
+    // GET TOOLS FROM MONGODB
+    useEffect(() => {
+        axios.get("http://localhost:3000/getTools")
+            .then(tools => setTools(tools.data))
+            .catch(err => console.log(err))
+    }, []);
 
-    // GET TOOLS FROM DB.JSON
-    const getTools = async () => {
-        try {
-            const res = await axios.get('http://localhost:3000/tools');
-            setTools(res.data);
-        } catch (error) {
-            console.error("Error fetching tools data:", error);
-        }
-    };
 
     // Define different animation variants
     const variants = {

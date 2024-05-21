@@ -9,21 +9,17 @@ function Main() {
     const [filteredProjects, setFilteredProjects] = useState([]);
     const [projects, setProjects] = useState([]);
 
-
+    // GET PROJECTS FROM MONGODB
     useEffect(() => {
-        getData();
-    }, []);
-
-    function getData() {
-        axios.get('http://localhost:3000/projects')
+        axios.get("http://localhost:3000/getProjects")
             .then((res) => {
                 setProjects(res.data);
                 setFilteredProjects(res.data);
             })
-            .catch((error) => {
-                console.error("Error fetching projects data:", error);
-            });
-    }
+            .catch(err => console.log(err))
+    }, [])
+
+
 
     const handleCategoryChange = (category) => {
         setCurrentActive(category);
@@ -33,11 +29,7 @@ function Main() {
             const filtered = projects.filter(project => project.category === category);
             setFilteredProjects(filtered);
         }
-
     };
-
-
-
 
 
     return (
