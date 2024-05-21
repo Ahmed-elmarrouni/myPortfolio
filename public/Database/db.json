@@ -1,0 +1,179 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "projectTitle": "react-project",
+            "category": "React",
+            "imgpath": "./noImage.png",
+            "description": "A project built using React.js for frontend development."
+        },
+        {
+            "id": "2",
+            "projectTitle": "Html/Css-project",
+            "category": "htmlcss",
+            "imgpath": "./noImage.png",
+            "description": "A project involving HTML and CSS for web development."
+        },
+        {
+            "id": "3",
+            "projectTitle": "python-project",
+            "category": "python",
+            "imgpath": "./noImage.png",
+            "description": "A project utilizing Python for scripting or application development."
+        },
+        {
+            "id": "4",
+            "projectTitle": "javascript-project",
+            "category": "javascript",
+            "imgpath": "./noImage.png",
+            "description": "A project involving JavaScript for web development or scripting."
+        },
+        {
+            "id": "5",
+            "projectTitle": "laravel-project",
+            "category": "laravel",
+            "imgpath": "./noImage.png",
+            "description": "A project built using the Laravel PHP framework."
+        }
+    ],
+    "skills": [
+        {
+            "id": "31",
+            "skillName": "html",
+            "skillSvg": "/public/svg/skills/html.svg"
+        },
+        {
+            "id": "16",
+            "skillName": "css",
+            "skillSvg": "/public/svg/skills/css.svg"
+        },
+        {
+            "id": "8",
+            "skillName": "bootstrap",
+            "skillSvg": "/public/svg/skills/bootstrap.svg"
+        },
+        {
+            "id": "66",
+            "skillName": "tailwind",
+            "skillSvg": "/public/svg/skills/tailwind.svg"
+        },
+        {
+            "id": "35",
+            "skillName": "javascript",
+            "skillSvg": "/public/svg/skills/javascript.svg"
+        },
+        {
+            "id": "40",
+            "skillName": "materialui",
+            "skillSvg": "/public/svg/skills/materialui.svg"
+        },
+        {
+            "id": "58",
+            "skillName": "react",
+            "skillSvg": "/public/svg/skills/react.svg"
+        },
+        {
+            "id": "70",
+            "skillName": "vitejs",
+            "skillSvg": "/public/svg/skills/vitejs.svg"
+        },
+        {
+            "id": "71",
+            "skillName": "vue",
+            "skillSvg": "/public/svg/skills/vue.svg"
+        },
+        {
+            "id": "27",
+            "skillName": "git",
+            "skillSvg": "/public/svg/skills/git.svg"
+        },
+        {
+            "id": "5",
+            "skillName": "aws",
+            "skillSvg": "/public/svg/skills/aws.svg"
+        },
+        {
+            "id": "43",
+            "skillName": "microsoftoffice",
+            "skillSvg": "/public/svg/skills/microsoftoffice.svg"
+        },
+        {
+            "id": "44",
+            "skillName": "mongoDB",
+            "skillSvg": "/public/svg/skills/mongoDB.svg"
+        },
+        {
+            "id": "45",
+            "skillName": "mysql",
+            "skillSvg": "/public/svg/skills/mysql.svg"
+        },
+        {
+            "id": "46",
+            "skillName": "nextJS",
+            "skillSvg": "/public/svg/skills/nextJS.svg"
+        },
+        {
+            "id": "52",
+            "skillName": "php",
+            "skillSvg": "/public/svg/skills/php.svg"
+        },
+        {
+            "id": "54",
+            "skillName": "postgresql",
+            "skillSvg": "/public/svg/skills/postgresql.svg"
+        },
+        {
+            "id": "56",
+            "skillName": "python",
+            "skillSvg": "/public/svg/skills/python.svg"
+        },
+        {
+            "id": "57",
+            "skillName": "laravel",
+            "skillSvg": "/public/svg/skills/laravel-svgrepo-com.svg"
+        },
+        {
+            "id": "58",
+            "skillName": "Qt",
+            "skillSvg": "/public/svg/skills/qt-svgrepo-com.svg"
+        }
+    ],
+    "tools": [
+        {
+            "id": "1",
+            "skillName": "github",
+            "skillSvg": "/public/svg/tools/icons8-github.svg"
+        },
+        {
+            "id": "2",
+            "skillName": "gitlab",
+            "skillSvg": "/public/svg/tools/icons8-gitlab.svg"
+        },
+        {
+            "id": "3",
+            "skillName": "postman",
+            "skillSvg": "/public/svg/tools/icons8-postman-api.svg"
+        },
+        {
+            "id": "4",
+            "skillName": "github",
+            "skillSvg": "/public/svg/tools/icons8-pycharm.svg"
+        },
+        {
+            "id": "5",
+            "skillName": "VsCode",
+            "skillSvg": "/public/svg/tools/icons8-vs-code.svg"
+        },
+        {
+            "id": "6",
+            "skillName": "mysql",
+            "skillSvg": "/public/svg/tools/icons8-mysql-96.png"
+        }
+        ,
+        {
+            "id": "8",
+            "skillName": "Database",
+            "skillSvg": "/public/svg/tools/icons8-database-100.png"
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+section.contact-me .icon-envelope {
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+section.contact-me .title {
+    font-size: 2.1rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+
+section.contact-me .subtitle {
+    color: var(--subtitle);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+
+
+section.contact-me label {
+    color: var(--subtitle);
+}
+
+section.contact-me #email,
+section.contact-me #fullName,
+section.contact-me #message {
+    all: unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 16rem;
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 1.1rem;
+}
+
+section.contact-me #email:focus,
+section.contact-me #fullName:focus,
+section.contact-me #message:focus,
+section.contact-me #email:hover,
+section.contact-me #fullName:hover,
+section.contact-me #message:hover {
+    border: 1px solid var(--blue);
+}
+
+
+
+
+
+section.contact-me #message {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+
+.send {
+    background-color: rgba(36, 37, 46, 1);
+    /* width: 11rem; */
+    padding: .75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: .3s;
+    margin-top: 1.8rem;
+    margin-left: 8rem;
+}
+
+.send:hover {
+    scale: .97;
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: .6px;
+    /* padding: .8rem 0; */
+    border: 1px solid var(--blue);
+
+}
+
+.light .send {
+    border: 1px solid #000;
+    background-color: var(--subtitle);
+}
+
+
+/* LIGHT MODE ??????? */
+.light .contact-me #email,
+.light .contact-me #fullName,
+.light section.contact-me #message {
+    background-color: rgba(255, 255, 255, .162);
+    border: 1px solid rgba(128, 128, 128, .451);
+    box-shadow: 1px 1px 1px rgba(73, 73, 75, .105);
+    color: #232324;
+}
+
+.light section.contact-me #email:focus,
+.light section.contact-me #message:focus,
+.light section.contact-me #fullName:focus,
+.light section.contact-me #email:hover,
+.light section.contact-me #fullName:hover,
+.light section.contact-me #message:hover {
+    border: 1px solid rgb(78, 80, 80);
+}
+
+.animation {
+    margin-left: 12rem;
+}
+
+
+
+@media (max-width: 1250px) {
+    section.contact-us .contact-animation {
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+    section.contact-me form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    section.contact-me form .flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    section.contact-me .animation {
+        display: none;
+    }
+
+    section.contact-me #email,
+    section.contact-me #fullName,
+    section.contact-me #message {
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem 0;
+        padding: 0.7rem 0;
+        margin-top: 1rem;
+    }
+
+
+    .send {
+        width: 40%;
+        align-self: center;
+        margin-left: 3rem;
+
+    }
+
+}

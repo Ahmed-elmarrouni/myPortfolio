@@ -1,23 +1,23 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // Import models
 const Project = require('./models/projects');
 const Skill = require('./models/skills');
 const Tool = require('./models/tools');
 
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
+app.use(cors()); 
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/portfolioDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/portfolioDB')
     .then(() => console.log('MongoDB connected...'))
     .catch(err => console.log(err));
-
 
 // Routes
 app.get('/', (req, res) => {
@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 // ****************************** Routes for projects ************************************************************
-app.get('/projects', async (req, res) => {
+app.get('/getProjects', async (req, res) => {
     try {
         const projects = await Project.find();
         res.json(projects);
@@ -34,17 +34,8 @@ app.get('/projects', async (req, res) => {
     }
 });
 
-app.post('/projects', async (req, res) => {
-    try {
-        const newProject = new Project(req.body);
-        const savedProject = await newProject.save();
-        res.status(201).json(savedProject);
-    } catch (err) {
-        res.status(400).send(err);
-    }
-});
 // ****************************** Routes for skills ************************************************************
-app.get('/skills', async (req, res) => {
+app.get('/getSkills', async (req, res) => {
     try {
         const skills = await Skill.find();
         res.json(skills);
@@ -53,17 +44,8 @@ app.get('/skills', async (req, res) => {
     }
 });
 
-app.post('/skills', async (req, res) => {
-    try {
-        const newSkill = new Project(req.body);
-        const savedSkill = await newSkill.save();
-        res.status(201).json(savedSkill);
-    } catch (err) {
-        res.status(400).send(err);
-    }
-});
 // ****************************** Routes for tools ************************************************************
-app.get('/tools', async (req, res) => {
+app.get('/getTools', async (req, res) => {
     try {
         const tools = await Tool.find();
         res.json(tools);
@@ -72,19 +54,7 @@ app.get('/tools', async (req, res) => {
     }
 });
 
-app.post('/tools', async (req, res) => {
-    try {
-        const newTool = new Project(req.body);
-        const savedTool = await newTool.save();
-        res.status(201).json(savedTool);
-    } catch (err) {
-        res.status(400).send(err);
-    }
-});
-
-
-
-
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+

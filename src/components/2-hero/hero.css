@@ -1,0 +1,229 @@
+section.hero {
+    margin-top: 4rem;
+}
+
+
+section.hero .left-secton {
+    flex-grow: 1;
+}
+
+
+
+section.hero h1.title {
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+
+}
+
+section.hero p.subtitle {
+    color: var(--subtitle);
+    font-size: .9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+}
+
+section.hero .allicons {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+}
+
+section.hero .allicons .icon {
+    color: var(--subtitle);
+
+}
+
+section.hero .allicons .icon:hover {
+    font-size: 1.4rem;
+    transition: .3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+}
+
+
+/* Button */
+
+.CvBtn {
+    margin-top: 30px;
+}
+
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 30px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: var(--blue);
+    box-shadow: 0 0 0 2px var(--blue);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    width: 13rem;
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: var(--blue);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circleBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: #212121;
+}
+
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px var(--blue);
+}
+
+.animated-button:hover .circleBtn {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+
+/* ************* RIGHT SECTION ************* */
+section.hero .animation {
+    width: 100%;
+}
+
+.img {
+    -webkit-animation: morph 8s ease-in-out infinite;
+    animation: morph 8s ease-in-out infinite;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid goldenrod;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 25rem;
+    width: 25rem;
+    padding: 2.5px;
+    box-shadow: 2px 2px 40px rgb(187, 177, 177) inset;
+    transition: all 1s ease-in-out;
+}
+
+@-webkit-keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 70%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 70%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1250px) {
+    section.hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .allicons,
+    .CvBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    section.hero .left-section {
+        width: 80%;
+        max-width: 80%;
+    }
+
+
+    section.hero .right-section {
+        width: 20px;
+    }
+
+    section.hero .right-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.hero .img {
+        height: 15rem;
+        width: 15rem;
+        margin-right: 13rem;
+    }
+}
