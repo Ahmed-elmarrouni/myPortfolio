@@ -50,7 +50,7 @@ function Skills() {
 
                 {/* SKILLS */}
                 <div className="slider-container" ref={skillsRef}>
-                    {skills.map((item, index) => (
+                    {skills.map((skill, index) => (
                         <motion.div
                             ref={skillsInViewRef}
                             layout
@@ -58,10 +58,11 @@ function Skills() {
                             animate={skillsInView ? "visible" : "hidden"}
                             variants={variants}
                             transition={{ type: "spring", damping: 8, stiffness: 50, delay: index * 0.1 }}
-                            key={item.id}
+
+                            key={skill.id}
                             className="slide"
                         >
-                            <img src={item.skillSvg} alt={item.skillName} className="skill-icon" />
+                            <img src={skill.skillSvg} alt={skill.skillName} className="skill-icon" />
                         </motion.div>
                     ))}
                 </div>
