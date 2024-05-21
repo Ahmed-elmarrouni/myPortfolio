@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 
 // Import models
 const Project = require('./models/projects');
-const Skill = require('./models/skills');
-const Tool = require('./models/tools');
+// const Skill = require('./models/skills');
+// const Tool = require('./models/tools');
 
 
 const app = express();
