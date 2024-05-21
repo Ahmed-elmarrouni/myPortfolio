@@ -2,9 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 // Import models
-const Project = require('./models/Project');
-const Skill = require('./models/Skill');
-const Tool = require('./models/Tool');
+const Project = require('./models/projects');
+const Skill = require('./models/skills');
+const Tool = require('./models/tools');
 
 
 const app = express();
