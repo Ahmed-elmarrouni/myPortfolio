@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 
 // Import models
 const Project = require('./models/projects');
-// const Skill = require('./models/skills');
-// const Tool = require('./models/tools');
+const Skill = require('./models/skills');
+const Tool = require('./models/tools');
 
 
 const app = express();
@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
-// Routes for projects
+// ****************************** Routes for projects ************************************************************
 app.get('/projects', async (req, res) => {
     try {
         const projects = await Project.find();
@@ -39,6 +39,44 @@ app.post('/projects', async (req, res) => {
         const newProject = new Project(req.body);
         const savedProject = await newProject.save();
         res.status(201).json(savedProject);
+    } catch (err) {
+        res.status(400).send(err);
+    }
+});
+// ****************************** Routes for skills ************************************************************
+app.get('/skills', async (req, res) => {
+    try {
+        const skills = await Skill.find();
+        res.json(skills);
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
+app.post('/skills', async (req, res) => {
+    try {
+        const newSkill = new Project(req.body);
+        const savedSkill = await newSkill.save();
+        res.status(201).json(savedSkill);
+    } catch (err) {
+        res.status(400).send(err);
+    }
+});
+// ****************************** Routes for tools ************************************************************
+app.get('/tools', async (req, res) => {
+    try {
+        const tools = await Tool.find();
+        res.json(tools);
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
+app.post('/tools', async (req, res) => {
+    try {
+        const newTool = new Project(req.body);
+        const savedTool = await newTool.save();
+        res.status(201).json(savedTool);
     } catch (err) {
         res.status(400).send(err);
     }
